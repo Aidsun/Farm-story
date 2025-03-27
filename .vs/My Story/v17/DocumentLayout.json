@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Unity Project\\My Story\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E329D65-6AFD-3624-80C6-9C514D918616}|Assembly-CSharp-Editor.csproj|E:\\Unity Project\\My Story\\assets\\editor\\ui builder\\itemeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E329D65-6AFD-3624-80C6-9C514D918616}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\ui builder\\itemeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E329D65-6AFD-3624-80C6-9C514D918616}|Assembly-CSharp-Editor.csproj|e:\\unity project\\my story\\assets\\editor\\ui builder\\itemeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E329D65-6AFD-3624-80C6-9C514D918616}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\ui builder\\itemeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DataCollection.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\DataCollection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\DataCollection.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\DataCollection.cs",
               "RelativeToolTip": "Assets\\Scripts\\Utilities\\DataCollection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T01:05:13.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ItemEditor.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Editor\\UI Builder\\ItemEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Editor\\UI Builder\\ItemEditor.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Editor\\UI Builder\\ItemEditor.cs",
               "RelativeToolTip": "Assets\\Editor\\UI Builder\\ItemEditor.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAwIwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAwHIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T06:06:23.976Z",
               "EditorCaption": ""

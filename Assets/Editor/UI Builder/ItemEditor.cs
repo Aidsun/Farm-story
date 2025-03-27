@@ -1,15 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-using System.Collections.Generic;
-using System;
-using System.Linq;
-using UnityEditor.Search;
 
 public class ItemEditor : EditorWindow
 {
 
+
+    //定义数据库
     private ItemDataList_SO dataBase;
+    //定义物品详细列表
     private List<ItemDetails> itemList = new List<ItemDetails>();
     //获取列表模板
     private VisualTreeAsset itemRowTemplate;
@@ -24,17 +27,22 @@ public class ItemEditor : EditorWindow
     private VisualElement iconPreview;
     //获取左侧ItemListView列表
     private ListView itemListView;
-
+    //获取左侧内容框Row1的右侧ItemIcon
+    private ObjectField Row1RightIcon;
+    //设置unity工具选项卡
     [MenuItem("Aidsun/ItemEditor")]
+    //添加项目编辑器
     public static void ShowExample()
     {
         ItemEditor wnd = GetWindow<ItemEditor>();
         wnd.titleContent = new GUIContent("ItemEditor");
     }
-
+    //绘制GUI
     public void CreateGUI()
     {
+        //定义根节点
         VisualElement root = rootVisualElement;
+
         //导入UXML数据
         var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/UI Builder/ItemEditor.uxml");
         VisualElement labelFromUXML = visualTree.Instantiate();
@@ -47,15 +55,43 @@ public class ItemEditor : EditorWindow
         defaultIcon = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/M Studio/Art/Items/Icons/icon_M.png");
 
         //变量赋值
+        //获取左边ItemList列表
         itemListView = root.Q<VisualElement>("ItemList").Q<ListView>("ListView");
+        //获取右边ItemDetails内容框
         ItemDetailsSection = root.Q<ScrollView>("ItemDetails");
-        iconPreview = ItemDetailsSection.Q<VisualElement>("IconPreview");
+        //获取右边内容框的图标预览图
+        iconPreview = ItemDetailsSection.Q<VisualElement>("Row1").Q<VisualElement>("Container").Q<VisualElement>("IconPreview");
+        //左侧内容框Row1的右侧ItemIcon
+        Row1RightIcon = ItemDetailsSection.Q<VisualElement>("Row1").Q<VisualElement>("Container").Q<VisualElement>("General").Q<ObjectField>("ItemIcon");
+
+        //获取添加按钮
+        root.Q<Button>("AddButton").clicked += OnAddItemClicked;
+        root.Q<Button>("DeleteButton").clicked += OnDeleteItemClicked;
+
         //加载数据
         LoadDataBase();
         //生成列表   
         GenerateListView();
 
     }
+
+    //删除事件
+    private void OnDeleteItemClicked()
+    {
+        itemList.Remove(activeItem);
+        itemListView.Rebuild();
+        ItemDetailsSection.visible = false;
+    }
+    //增加事件
+    private void OnAddItemClicked()
+    {
+        ItemDetails newItem = new ItemDetails();
+        newItem.itemName = "New Name";
+        newItem.itemID = 1001 + itemList.Count;
+        itemList.Add(newItem);
+        itemListView.Rebuild();
+    }
+
     private void LoadDataBase()
     {
         var dataArray = AssetDatabase.FindAssets("ItemDataList_SO");
@@ -67,11 +103,11 @@ public class ItemEditor : EditorWindow
         itemList = dataBase.itemDetailsList;
         //如果不标记则无法保存数据
         EditorUtility.SetDirty(dataBase);
-        //Debug.LogWarning(itemList[0].itemID); 
     }
     //生成item列表
     private void GenerateListView()
     {
+       //清楚itemListView的数据树缓存
         Func<VisualElement> makeItem = () => itemRowTemplate.CloneTree();
         Action<VisualElement, int> bindItem = (e, i) =>
         {
@@ -79,31 +115,43 @@ public class ItemEditor : EditorWindow
             {
                 if (itemList[i].itemIcon != null)
                 {
-                    e.Q<VisualElement>("Icon");
+                    e.Q<VisualElement>("Icon").style.backgroundImage = itemList[i].itemIcon.texture ;
+                }
+                else
+                {
+                    e.Q<VisualElement>("Icon").style.backgroundImage = defaultIcon.texture;
                 }
                 e.Q<Label>("Name").text = itemList[i] == null ? "Name Is Null" : itemList[i].itemName;
-
             }
         };
+        //固定itemListView的高度
         itemListView.fixedItemHeight = 60;
+        //定义itemListView的数据源
         itemListView.itemsSource = itemList;
+        //生成itemListView的数据树
         itemListView.makeItem = makeItem;
+        //itemListView的数据绑定
         itemListView.bindItem = bindItem;
-
-        itemListView.onSelectionChange += OnListSelectionChange;
+        //被选中的List执行OnListSelectionChange函数
+        itemListView.selectionChanged += OnListSelectionChange;
+        //未被选中的itemList的itemDetails不可见
         ItemDetailsSection.visible = false;
     }
 
     private void OnListSelectionChange(IEnumerable<object> selectedItem)
     {
+        //设置活动item为ItemList的第一个
         activeItem = (ItemDetails)selectedItem.First();
+        //获取ItemDetails
         GetItemDetails();
+        //设置选中的itemList对应的itemDetails可见
         ItemDetailsSection.visible = true;
     }
 
     //设置ItemDetails的各项参数
     private void GetItemDetails()
     {
+        //记录数据
         ItemDetailsSection.MarkDirtyRepaint();
 
         //连接ItemID
@@ -121,37 +169,35 @@ public class ItemEditor : EditorWindow
             activeItem.itemName = evt.newValue;
             itemListView.Rebuild();
         });
+
         //连接图标
+        //Row1左侧的图标
         iconPreview.style.backgroundImage = activeItem.itemIcon == null ? defaultIcon.texture : activeItem.itemIcon.texture;
-        var iconField = ItemDetailsSection.Q<ObjectField>("ItemIcon");
+        //Row1右侧的Sprite选择框
+        Row1RightIcon.value = activeItem.itemIcon;
+        //Row1右侧的Sprite选择框的回调函数
+        Row1RightIcon.RegisterValueChangedCallback(evt => {
+        
+            Sprite newIcon  = evt.newValue as Sprite;
+            activeItem.itemIcon = newIcon;
+
+            iconPreview.style.backgroundImage = newIcon == null ? defaultIcon.texture : newIcon.texture;
+            itemListView.Rebuild();
+        });
+
+        //连接世界图标
+        ItemDetailsSection.Q<ObjectField>("ItemSprite").value = activeItem.itemOnWorldSprite;
+        ItemDetailsSection.Q<ObjectField>("ItemSprite").RegisterValueChangedCallback(evt =>
         {
-            if (iconField == null)
-            {
-                var generalSection = ItemDetailsSection.Q<VisualElement>("General");
-                iconField = generalSection?.Q<ObjectField>("ItemIcon");
-            }
-            else
-            {
-                ItemDetailsSection.Q<ObjectField>("ItemIcon").value = activeItem.itemIcon;
-                ItemDetailsSection.Q<ObjectField>("ItemIcon").RegisterValueChangedCallback(evt =>
-                {
-                    Sprite newIcon = evt.newValue as Sprite;
-                    activeItem.itemIcon = newIcon;
-                    iconPreview.style.backgroundImage = newIcon == null ? defaultIcon.texture : newIcon.texture;
-                    itemListView.Rebuild();
-                }
-                );
-            }
-        }
-        //连接ItemType
-        //ItemDetailsSection.Q<EnumField>("ItemType").value = activeItem.itemType;
-        //ItemDetailsSection.Q<EnumField>("ItemType").RegisterValueChangedCallback(evt =>
-        //{
-        //    activeItem.itemType = evt.newValue;
-        //    itemListView.Rebuild();
+            activeItem.itemOnWorldSprite = (Sprite)evt.newValue;
+        });
 
-        //});
-
+        //连接物品类型
+        ItemDetailsSection.Q<EnumField>("ItemType").Init(activeItem.itemType);
+        ItemDetailsSection.Q<EnumField>("ItemType").RegisterValueChangedCallback(evt =>
+        {
+            activeItem.itemType = (ItemType)evt.newValue;
+        });
 
         //连接描述
         ItemDetailsSection.Q<TextField>("Description").value = activeItem.itemDescription;
