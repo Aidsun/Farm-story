@@ -60,14 +60,19 @@
     <Analyzer Include="D:\Unity Hub\EditDownload\Edit\2022.3.53f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Inventory\Data SO\InventoryBag_SO.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item\Item.cs" />
     <Compile Include="Assets\Scripts\Utilities\SwitchBounds.cs" />
     <Compile Include="Assets\Scripts\Utilities\Enums.cs" />
     <Compile Include="Assets\Scripts\Player\TriggerItemFader.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Logic\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\Item\ItemFader.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Utilities\DataCollection.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data SO\ItemDataList_SO.cs" />
     <Compile Include="Assets\Scripts\Utilities\Settings.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
