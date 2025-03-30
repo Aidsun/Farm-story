@@ -11,7 +11,12 @@ namespace aidusnFarm.Inventory
         [Header("物品数据")]
         public ItemDataList_SO itemDataList_SO;
         [Header("背包数据")]
-        public InventoryBag_SO PlayerBag; 
+        public InventoryBag_SO PlayerBag;
+
+        private void Start()
+        {
+            EventHandler.CallUpdateInventoryUI(InventoryLocation.玩家, PlayerBag.itemList);
+        }
 
         //利用itemID找到item信息
         public ItemDetails GetItemDetails(int ID)
@@ -32,6 +37,8 @@ namespace aidusnFarm.Inventory
             {
                 Destroy(item.gameObject);
             }
+            //更新UI
+            EventHandler.CallUpdateInventoryUI(InventoryLocation.玩家, PlayerBag.itemList);
         }
 /// <summary>
 /// 检查背包是否有空位
