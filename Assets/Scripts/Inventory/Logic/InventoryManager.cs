@@ -102,5 +102,27 @@ namespace aidusnFarm.Inventory
                 PlayerBag.itemList[index] = item;
             }
         }
+        /// <summary>
+        /// 实现玩家背包内物品进行交换
+        /// </summary>
+        /// <param name="formIndex">当前索引</param>
+        /// <param name="targetIndex">目标索引</param>
+        public void SwapItem(int formIndex,int targetIndex)
+        {
+            InventoryItem currentItem = PlayerBag.itemList[formIndex];
+            InventoryItem targetItem  = PlayerBag.itemList[targetIndex];
+
+            if(targetItem.itemAmount != 0)
+            {
+                PlayerBag.itemList[formIndex] = targetItem;
+                PlayerBag.itemList[targetIndex] = currentItem;
+            }
+            else
+            {
+                PlayerBag.itemList[targetIndex] = currentItem;
+                PlayerBag.itemList[formIndex] = new InventoryItem();
+            }
+            EventHandler.CallUpdateInventoryUI(InventoryLocation.玩家,PlayerBag.itemList);
+        }
     }
 } 

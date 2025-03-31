@@ -23113,6 +23113,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &169180806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169180807}
+  m_Layer: 0
+  m_Name: ItemParent
+  m_TagString: ItemParent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &169180807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169180806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &373107226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 643528002253623170, guid: 827279030c58e4a4db4e52432e66b05a, type: 3}
@@ -52884,7 +52915,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 935939282883911899, guid: f71f91abe8706cb4eb872a3501f45391, type: 3}
       propertyPath: itemID
-      value: 1013
+      value: 1003
       objectReference: {fileID: 0}
     - target: {fileID: 935939282883911899, guid: f71f91abe8706cb4eb872a3501f45391, type: 3}
       propertyPath: itemDetails.itemType
@@ -53575,3 +53606,4 @@ SceneRoots:
   - {fileID: 1503905332}
   - {fileID: 1636491743}
   - {fileID: 2055911637}
+  - {fileID: 169180807}
