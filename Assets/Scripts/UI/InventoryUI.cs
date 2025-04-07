@@ -8,6 +8,8 @@ namespace aidusnFarm.inventory
 {
     public class InventoryUI : MonoBehaviour
     {
+        [Header("物品提示框")]
+        public ItemToolTip itemTooltip; 
         [Header("拖拽图片")]
         public Image DragItem;
 

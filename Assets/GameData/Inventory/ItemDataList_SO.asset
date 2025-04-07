@@ -84,7 +84,7 @@ MonoBehaviour:
     canDropped: 0
     canCarried: 1
     itemPrice: 45
-    sellPercentage: 0
+    sellPercentage: 0.5
   - itemID: 1007
     itemName: "\u8461\u8404"
     itemType: 1
@@ -95,8 +95,8 @@ MonoBehaviour:
     canPickedup: 1
     canDropped: 1
     canCarried: 0
-    itemPrice: 100
-    sellPercentage: 0
+    itemPrice: 5
+    sellPercentage: 0.5
   - itemID: 1008
     itemName: "\u5E72\u8349"
     itemType: 0
