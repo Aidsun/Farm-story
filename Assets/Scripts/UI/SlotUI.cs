@@ -121,15 +121,15 @@ namespace aidusnFarm.inventory
 
             }
             //把物品仍在地上
-            else
-            {
-                //鼠标对应地图上的坐标
-                if (itemDetails.canDropped)
-                {
-                    var pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-                    EventHandler.CallInstantiateItemInScene(itemDetails.itemID, pos);
-                }
-            }
+            //else
+            //{
+            //    //鼠标对应地图上的坐标
+            //    if (itemDetails.canDropped)
+            //    {
+            //        var pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+            //        EventHandler.CallInstantiateItemInScene(itemDetails.itemID, pos);
+            //    }
+            //}
         }
     }
 

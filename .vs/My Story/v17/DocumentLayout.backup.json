@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\slotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\logic\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\logic\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,23 +50,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "ItemManager.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:36:32.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EventHandler.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\EventHandler.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Utilities\\EventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T01:01:12.237Z"
+              "WhenOpened": "2025-03-30T01:01:12.237Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "InventoryUI.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\InventoryUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InventoryUI.cs",
@@ -80,14 +98,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SlotUI.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\SlotUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\SlotUI.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAswH0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswHwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T09:26:14.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Enums.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Enums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\Enums.cs",
@@ -99,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DataCollection.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\DataCollection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\DataCollection.cs",
@@ -111,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ItemPickUp.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
@@ -123,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Item.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Item\\Item.cs",
@@ -135,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Singleton.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\Singleton.cs",
@@ -147,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
