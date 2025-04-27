@@ -19,15 +19,21 @@ public class Player : MonoBehaviour
     //定义移动方向矢量
     private Vector2 movementInput;
 
+    //获取动画数组
+    private Animator[] animators;
+
+    private bool isMoving;
     void Start()
     {
         //初始化获取刚体组件
         rb = GetComponent<Rigidbody2D>();
+        animators = GetComponentsInChildren<Animator>();
     }
 
     void Update()
     {
         PlayerInput();
+        SwitchAnimation();
     }
 
     private void FixedUpdate()
@@ -62,13 +68,35 @@ public class Player : MonoBehaviour
             inputX = inputX * restrictiveSpeed;
             inputY = inputY * restrictiveSpeed;
         }
+        //按住左边shift进行减速
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            inputX = inputX * 0.5f;
+            inputY = inputY * 0.5f;
+        }
         //计算移动矢量
         movementInput = new Vector2(inputX, inputY);
+
+        isMoving = movementInput != Vector2.zero;
     }
     //移动玩家
     private void Movement()
     {
         //刚体的当前位置+移动矢量*移动速度*时间
         rb.MovePosition(rb.position + movementInput * Speed * Time.deltaTime);
+    }
+
+    //设置切换动画播放状态
+    private void SwitchAnimation()
+    {
+        foreach(var anim in animators)
+        {
+            anim.SetBool("IsMoving", isMoving);
+            if (isMoving)
+            {
+                anim.SetFloat("InputX", inputX);
+                anim.SetFloat("InputY", inputY);
+            }
+        }
     }
 }
