@@ -77,7 +77,7 @@ MonoBehaviour:
     itemName: "\u8461\u8404\u79CD\u5B50"
     itemType: 0
     itemIcon: {fileID: 21300000, guid: 13fd782ac3661413abe57fc16343e499, type: 3}
-    itemOnWorldSprite: {fileID: 0}
+    itemOnWorldSprite: {fileID: 21300000, guid: 13fd782ac3661413abe57fc16343e499, type: 3}
     itemDescription: "\u6751\u5E84\u91CC\u6700\u4E3A\u53D7\u6B22\u8FCE\u7684\u79CD\u5B50\u4E4B\u4E00\uFF0C\u4F46\u662F\u4EF7\u683C\u6709\u4E00\u70B9\u8D35"
     itemUseRadius: 1
     canPickedup: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
     itemName: "\u8461\u8404"
     itemType: 1
     itemIcon: {fileID: 21300000, guid: 567730b76d77440f09c9bb6adee6040f, type: 3}
-    itemOnWorldSprite: {fileID: 0}
+    itemOnWorldSprite: {fileID: 21300000, guid: 567730b76d77440f09c9bb6adee6040f, type: 3}
     itemDescription: "\u6C34\u5206\u5F88\u591A\u7684\u6C34\u679C\uFF0C\u5F53\u7136\uFF0C\u8FD9\u5F88\u5408\u9002\uFF0C\u56E0\u4E3A\u67D0\u4E2A\u4EBA\u5F88\u559C\u6B22\u7D2B\u8272"
     itemUseRadius: 1
     canPickedup: 1

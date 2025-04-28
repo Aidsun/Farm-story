@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
             inputX = inputX * restrictiveSpeed;
             inputY = inputY * restrictiveSpeed;
         }
-        //按住左边shift进行减速
+        //按住左边shift进行加速
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            inputX = inputX * 0.5f;
-            inputY = inputY * 0.5f;
+            inputX = inputX * 1.2f;
+            inputY = inputY * 1.2f;
         }
         //计算移动矢量
         movementInput = new Vector2(inputX, inputY);

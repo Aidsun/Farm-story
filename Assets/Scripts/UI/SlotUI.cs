@@ -78,6 +78,11 @@ namespace aidusnFarm.inventory
             isSelected = !isSelected;
             slotHightlight.gameObject.SetActive(isSelected);
             inventoryUI.UpdateSlotHightLight(slotIndex);
+
+            if(slotType == SlotType.±³°ü)
+            {
+                EventHandler.CallItemSelectedEvent(itemDetails,isSelected);
+            }
         }
 
         //¿ªÊ¼ÍÏ×§

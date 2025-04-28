@@ -12,3 +12,11 @@ public enum InventoryLocation
 {
     玩家,盒子
 }
+public enum PartType
+{
+    空,举起,Hoe,Break,
+}
+public enum PartName
+{
+    Body,Hair,Arm,Tool
+}
