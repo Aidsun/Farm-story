@@ -11,13 +11,28 @@ public static class EventHandler
     }
 
     public static event Action<int, Vector3> InstantiateItemInScene;
-    public static void CallInstantiateItemInScene(int ID,Vector3 pos)
+    public static void CallInstantiateItemInScene(int ID, Vector3 pos)
     {
         InstantiateItemInScene?.Invoke(ID, pos);
     }
     public static event Action<ItemDetails, bool> ItemSelectedEvent;
-    public static void CallItemSelectedEvent(ItemDetails itemDetails, bool isSelected) 
+    public static void CallItemSelectedEvent(ItemDetails itemDetails, bool isSelected)
     {
         ItemSelectedEvent?.Invoke(itemDetails, isSelected);
     }
+    ///summary
+    ///更新分钟和小时
+    ///summary
+    public static event Action<int, int> GameMinuteEvent;
+    public static void CallGameMinuteEvent(int minute, int hour)
+    {
+        GameMinuteEvent?.Invoke(minute, hour);
+    }
+    //更新小时，日，月，年，季节
+    public static event Action<int, int, int, int, Season> GameDateEvent;
+    public static void CallGameDateEvent(int hour,int day, int month,int year,Season season)
+    {
+        GameDateEvent?.Invoke(hour,day,month,year,season);
+    }
+
 }

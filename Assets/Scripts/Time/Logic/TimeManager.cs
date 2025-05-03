@@ -20,6 +20,11 @@ public class TimeManager : MonoBehaviour
     {
         NewGameTime();
     }
+    private void Start()
+    {
+        EventHandler.CallGameMinuteEvent(gameMinute, gameHour);
+        EventHandler.CallGameDateEvent(gameHour, gameDay,gameMonth,gameYear,gameSeason);
+    }
     private void Update()
     {
         if (!gameClockPause)
@@ -87,7 +92,9 @@ public class TimeManager : MonoBehaviour
                         }
                     }
                 }
+                EventHandler.CallGameDateEvent(gameHour, gameDay, gameMonth, gameYear, gameSeason);
             }
+            EventHandler.CallGameMinuteEvent(gameMinute, gameHour);
         }
         //Debug.LogWarning(gameYear+"Äê"+gameMonth+"ÔÂ"+gameDay+"ÈÕ\t"+gameHour+":"+gameMinute+":"+ gameSecond  );
     }
