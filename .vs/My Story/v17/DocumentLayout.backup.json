@@ -3,288 +3,47 @@
   "WorkspaceRootPath": "E:\\Unity Project\\My Story\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\time\\logic\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\time\\logic\\timemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\item\\itemfader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\item\\itemfader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\player\\animatoroverride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\animatoroverride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\ui\\slotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\slotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\datacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\ui\\itemtooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\itemtooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\ui\\showitemtooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\showitemtooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\item\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\item\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\inventory\\logic\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\logic\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\utilities\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\transition\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transition\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TimeManager.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Time\\Logic\\TimeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Time\\Logic\\TimeManager.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Time\\Logic\\TimeManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Time\\Logic\\TimeManager.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFsAAABvAAAAAAAAAA==",
+              "Title": "Teleport.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\Teleport.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Transition\\Teleport.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\Teleport.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Transition\\Teleport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T14:33:06.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AnimatorOverride.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\AnimatorOverride.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\AnimatorOverride.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\AnimatorOverride.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\AnimatorOverride.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwDQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T00:26:42.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Player.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:53:10.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ShowItemToolTip.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\ShowItemToolTip.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ShowItemToolTip.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\ShowItemToolTip.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ShowItemToolTip.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBgAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:32:14.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ItemToolTip.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\ItemToolTip.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ItemToolTip.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\ItemToolTip.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ItemToolTip.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:08:23.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ItemManager.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T02:36:32.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventHandler.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\EventHandler.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\EventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T01:01:12.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "InventoryUI.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\InventoryUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InventoryUI.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\InventoryUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\InventoryUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T00:48:02.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Enums.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\Enums.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Enums.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T09:38:24.409Z"
+              "WhenOpened": "2025-05-03T10:28:34.055Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Settings.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Settings.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\Settings.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Settings.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\Settings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Title": "TransitionManager.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\TransitionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Transition\\TransitionManager.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\TransitionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Transition\\TransitionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T03:08:39Z",
+              "WhenOpened": "2025-05-03T10:01:09.371Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemFader.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\ItemFader.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Item\\ItemFader.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\ItemFader.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Item\\ItemFader.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T03:07:43.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SlotUI.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\SlotUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SlotUI.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\SlotUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\SlotUI.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAkwFMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T09:26:14.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DataCollection.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\DataCollection.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\DataCollection.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\DataCollection.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\DataCollection.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAYwCgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T04:29:29.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ItemPickUp.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Item\\ItemPickUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T01:20:43.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Item.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\Item.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Item\\Item.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Item\\Item.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Item\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:27:40.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Singleton.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Singleton.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\Singleton.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\Singleton.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utilities\\Singleton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:09:43.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InventoryManager.cs",
-              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
-              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Logic\\InventoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T05:05:16.469Z"
             }
           ]
         }

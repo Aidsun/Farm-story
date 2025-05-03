@@ -34,5 +34,11 @@ public static class EventHandler
     {
         GameDateEvent?.Invoke(hour,day,month,year,season);
     }
+    //切换场景并且传送到目标位置
+    public static event Action<string, Vector3> TransitionEvent;
+    public static void CallTransitionEvent(string sceneName,Vector3 position)
+    {
+        TransitionEvent?.Invoke(sceneName,position);
+    }
 
 }
