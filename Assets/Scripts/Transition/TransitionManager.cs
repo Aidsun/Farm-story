@@ -39,10 +39,16 @@ namespace aidsun.Transition
         /// <returns></returns>
         private IEnumerator Transition(string sceneName, Vector3 targetPosition)
         {
+            //切换场景之前进行数据保存
+            EventHandler.CallBeforeSceneUnloadEvent();
             //异步卸载当前激活场景
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             //异步加载目标场景
             yield return LoadSceneSetActive(sceneName);
+            //移动人物坐标
+            EventHandler.CallMoveToPosition(targetPosition);
+            //切换场景之后进行数据加载
+            EventHandler.CallAfterSceneUnloadEvent();
         }
 
         /// <summary>

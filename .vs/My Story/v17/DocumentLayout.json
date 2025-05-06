@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "E:\\Unity Project\\My Story\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|E:\\Unity Project\\My Story\\assets\\scripts\\transition\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transition\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\transition\\transitionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\utilities\\switchbounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utilities\\switchbounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|e:\\unity project\\my story\\assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA7820A-B449-F43B-ECA5-9AB9832BE90C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\logic\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,25 +42,92 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InventoryUI.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\UI\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\InventoryUI.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T08:15:04.831Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwBkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:59:02.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SwitchBounds.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\SwitchBounds.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\SwitchBounds.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\SwitchBounds.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utilities\\SwitchBounds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:47:51.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EventHandler.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utilities\\EventHandler.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Utilities\\EventHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utilities\\EventHandler.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwCYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:41:39.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemManager.cs",
+              "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory\\Logic\\ItemManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:40:41.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Teleport.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\Teleport.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Transition\\Teleport.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\Teleport.cs",
               "RelativeToolTip": "Assets\\Scripts\\Transition\\Teleport.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T10:28:34.055Z"
+              "WhenOpened": "2025-05-03T10:28:34.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TransitionManager.cs",
               "DocumentMoniker": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\TransitionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Transition\\TransitionManager.cs",
               "ToolTip": "E:\\Unity Project\\My Story\\Assets\\Scripts\\Transition\\TransitionManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Transition\\TransitionManager.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwCMAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T10:01:09.371Z",
               "EditorCaption": ""

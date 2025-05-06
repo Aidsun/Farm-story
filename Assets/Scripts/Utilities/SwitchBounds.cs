@@ -6,9 +6,13 @@ using Cinemachine;
 public class SwitchBounds : MonoBehaviour
 {
     //切换场景后更改调用
-    private void Start()
+    private void OnEnable()
     {
-        SwitchConfinerShape();
+        EventHandler.AfterSceneUnloadEvent += SwitchConfinerShape;
+    }
+    private void OnDisable()
+    {
+        EventHandler.AfterSceneUnloadEvent -= SwitchConfinerShape;
     }
     private void SwitchConfinerShape()
     {

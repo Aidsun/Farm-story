@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -23,18 +24,51 @@ public class Player : MonoBehaviour
     private Animator[] animators;
 
     private bool isMoving;
-    void Start()
+    //玩家是否可以控制角色移动
+    private bool inputDisable;
+    //传送位置发生的偏移
+    private Vector3 offetPosition =new Vector3 ((float)-2.3,(float) -0.8,(float) -0.14);
+    private void Awake()
     {
         //初始化获取刚体组件
         rb = GetComponent<Rigidbody2D>();
         animators = GetComponentsInChildren<Animator>();
     }
+    private void OnEnable()
+    {
+        EventHandler.BeforeSceneUnloadEvent += OnBeforeSceneUnloadEvent;
+        EventHandler.AfterSceneUnloadEvent += OnAfterSceneUnloadEvent;
+        EventHandler.MoveToPosition += OnMoveToPosition;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.BeforeSceneUnloadEvent -= OnBeforeSceneUnloadEvent;
+        EventHandler.AfterSceneUnloadEvent -= OnAfterSceneUnloadEvent;
+        EventHandler.MoveToPosition -= OnMoveToPosition;
+    }
+    private void OnMoveToPosition(Vector3 targetPosition)
+    {
+        transform.position = targetPosition + offetPosition;
+    }
+
+    private void OnAfterSceneUnloadEvent()
+    {
+        inputDisable = false;
+    }
+
+    private void OnBeforeSceneUnloadEvent()
+    {
+        inputDisable = true;
+    }
 
     void Update()
     {
-        PlayerInput();
+        if(inputDisable == false)
+            PlayerInput();
         SwitchAnimation();
     }
+
 
     private void FixedUpdate()
     {

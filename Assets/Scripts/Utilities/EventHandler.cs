@@ -40,5 +40,22 @@ public static class EventHandler
     {
         TransitionEvent?.Invoke(sceneName,position);
     }
-
+    //场景切换之前的加载事件
+    public static event Action BeforeSceneUnloadEvent;
+    public static void CallBeforeSceneUnloadEvent()
+    {
+        BeforeSceneUnloadEvent?.Invoke();
+    }
+    //场景切换之后的加载事件
+    public static event Action AfterSceneUnloadEvent;
+    public static void CallAfterSceneUnloadEvent()
+    {
+        AfterSceneUnloadEvent?.Invoke();
+    }
+    //在不同场景中进行传送的函数
+    public static event Action<Vector3> MoveToPosition;
+    public static void CallMoveToPosition(Vector3 targetPosition)
+    {
+        MoveToPosition?.Invoke(targetPosition);
+    }
 }

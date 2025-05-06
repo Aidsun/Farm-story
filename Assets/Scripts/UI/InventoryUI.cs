@@ -25,11 +25,19 @@ namespace aidusnFarm.inventory
         private void OnEnable()
         {
             EventHandler.UpdateInventoryUI += OnUpdateInventoryUI;
+            EventHandler.BeforeSceneUnloadEvent += OnBeforeSceneUnloadEvent;
         }
         private void OnDisable()
         {
             EventHandler.UpdateInventoryUI -= OnUpdateInventoryUI;
+            EventHandler.BeforeSceneUnloadEvent -= OnBeforeSceneUnloadEvent;
         }
+
+        private void OnBeforeSceneUnloadEvent()
+        {
+            UpdateSlotHightLight(-1);
+        }
+
         private void Start()
         {//给每一个格子一个序号
             for (int i = 0; i < PlayerSlot.Length; i++)

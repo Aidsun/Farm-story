@@ -13,13 +13,16 @@ namespace aidusnFarm.Inventory
         private void OnEnable()
         {
             EventHandler.InstantiateItemInScene += OnInstantiateItemInScene;
+            EventHandler.AfterSceneUnloadEvent += OnAfterSceneLoadedEvent;
         }
 
         private void OnDisable()
         {
             EventHandler.InstantiateItemInScene -= OnInstantiateItemInScene;
+            EventHandler.AfterSceneUnloadEvent -= OnAfterSceneLoadedEvent;
         }
-        private void Start()
+
+        private void OnAfterSceneLoadedEvent()
         {
             itemParent = GameObject.FindWithTag("ItemParent").transform;
         }
