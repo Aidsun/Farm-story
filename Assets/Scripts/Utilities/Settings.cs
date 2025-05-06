@@ -23,4 +23,10 @@ public class Settings
     public const int dayHold = 30;
     [Tooltip("季节的阈值")]
     public const int seasonHold = 3;
+
+    //过渡界面的持续时间
+    public const float SceneDuration = 1.2f;
+    //过渡界面的入场出场时间
+    public const float EnterExistDuration = 0.2f;
+
 }

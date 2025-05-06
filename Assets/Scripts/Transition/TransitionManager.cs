@@ -1,26 +1,28 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 namespace aidsun.Transition
 {
     public class TransitionManager : MonoBehaviour
     {
+        [SceneName]
         [Tooltip("默认加载场景")]
         public string startSceneName = string.Empty;
+        private CanvasGroup fadeCanvasGroup;
+        private bool isFade;
 
         private void Start()
         {
             StartCoroutine(LoadSceneSetActive(startSceneName));
+            fadeCanvasGroup = FindObjectOfType<CanvasGroup>();
         }
-        //注册事件
+
         private void OnEnable()
         {
             EventHandler.TransitionEvent += OnTransitionEvent;
         }
+
         private void OnDisable()
         {
             EventHandler.TransitionEvent -= OnTransitionEvent;
@@ -28,42 +30,59 @@ namespace aidsun.Transition
 
         private void OnTransitionEvent(string sceneTarget, Vector3 positionTarget)
         {
-            StartCoroutine(Transition(sceneTarget, positionTarget));
+            if (!isFade)
+                StartCoroutine(Transition(sceneTarget, positionTarget));
         }
 
-        /// <summary>
-        /// 卸载当前激活场景，切换到目标场景，并且传送到目标位置
-        /// </summary>
-        /// <param name="目标场景"></param>
-        /// <param name="目标位置"></param>
-        /// <returns></returns>
         private IEnumerator Transition(string sceneName, Vector3 targetPosition)
         {
-            //切换场景之前进行数据保存
+            // 第一阶段：0.2秒淡入到全黑
+            yield return StartCoroutine(Fade(1));
+
+            // 第二阶段：保持全黑1.5秒
+            yield return new WaitForSeconds(Settings.SceneDuration);
+
+            // 场景切换前的准备
             EventHandler.CallBeforeSceneUnloadEvent();
-            //异步卸载当前激活场景
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-            //异步加载目标场景
             yield return LoadSceneSetActive(sceneName);
-            //移动人物坐标
             EventHandler.CallMoveToPosition(targetPosition);
-            //切换场景之后进行数据加载
             EventHandler.CallAfterSceneUnloadEvent();
+
+            // 第三阶段：0.2秒淡出到透明
+            yield return StartCoroutine(Fade(0));
+        }
+
+        private IEnumerator LoadSceneSetActive(string sceneName)
+        {
+            yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            Scene newScene = SceneManager.GetSceneAt(SceneManager.sceneCount - 1);
+            SceneManager.SetActiveScene(newScene);
         }
 
         /// <summary>
-        /// 加载场景并设置为激活状态
+        /// 改进后的淡入淡出方法（支持自定义时间）
         /// </summary>
-        /// <param name="场景名"></param>
-        /// <returns></returns>
-        private IEnumerator LoadSceneSetActive(string sceneName)
+        /// <param name="targetAlpha">目标透明度（1=全黑，0=透明）</param>
+        private IEnumerator Fade(float targetAlpha)
         {
-            //异步加载
-            yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            //获取场景列表
-            Scene newScene = SceneManager.GetSceneAt(SceneManager.sceneCount - 1);
-            //激活场景
-            SceneManager.SetActiveScene(newScene);
+            isFade = true;
+            fadeCanvasGroup.blocksRaycasts = true;
+            
+
+            float initialAlpha = fadeCanvasGroup.alpha;
+            float timer = 0f;
+
+            while (timer < Settings.EnterExistDuration)
+            {
+                fadeCanvasGroup.alpha = Mathf.Lerp(initialAlpha, targetAlpha, timer / Settings.EnterExistDuration);
+                timer += Time.deltaTime;
+                yield return null;
+            }
+
+            fadeCanvasGroup.alpha = targetAlpha; // 确保最终值准确
+            fadeCanvasGroup.blocksRaycasts = false;
+            isFade = false;
         }
     }
 }

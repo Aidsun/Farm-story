@@ -64,15 +64,18 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(inputDisable == false)
+        if (inputDisable == false)
             PlayerInput();
+        else
+            isMoving = false;
         SwitchAnimation();
     }
 
 
     private void FixedUpdate()
     {
-        Movement();
+        if(!inputDisable)
+            Movement();
     }
 
     //获取鼠标输入

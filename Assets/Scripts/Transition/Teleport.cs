@@ -7,6 +7,7 @@ namespace aidsun.Transition
 
     public class Teleport : MonoBehaviour
     {
+        [SceneName]
         [Tooltip("传送的目标场景名")]
         public string sceneTarget;
         [Tooltip("传送的目标位置")]
