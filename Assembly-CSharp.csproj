@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\Inventory\Data SO\ItemDataList_SO.cs" />
     <Compile Include="Assets\Scripts\Utilities\Settings.cs" />
     <Compile Include="Assets\Scripts\UI\ItemToolTip.cs" />
+    <Compile Include="Assets\Scripts\Cursor\CursorManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Player\AnimatorOverride.cs" />
