@@ -44,3 +44,36 @@ public class AnimatorType
     public PartName partName;
     public AnimatorOverrideController overrideController;
 }
+
+//序列化坐标
+[System.Serializable]
+public class SerializableVector3
+{
+    public float x, y, z;
+    public SerializableVector3(Vector3 pos)
+    {
+        this.x = pos.x;
+        this.y = pos.y;
+        this.z = pos.z;
+    }
+    //返回一个Vector3
+    public Vector3 ToVector3() 
+    {
+        return new Vector3(x,y,z);
+    }
+    //返回格子坐标
+    public Vector2Int ToVector2Int()
+    {
+        return new Vector2Int((int)x, (int)y);
+    }
+}
+
+//不同场景的不同物品
+[System.Serializable]
+public class SceneItem
+{
+    //物品ID
+    public int itemID;
+    //物品坐标
+    public SerializableVector3 position;
+}
